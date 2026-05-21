@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saboreie os melhores hambúrgueres artesanais na Craft & Grill. Blend Angus 100%, ingredientes selecionados e entrega rápida quente na sua casa. Peça já!">
+    
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://craftandgrill.com.br/">
+    <meta property="og:title" content="Craft & Grill - Hamburgueria Artesanal Premium">
+    <meta property="og:description" content="Os melhores hambúrgueres artesanais da cidade. Peça pelo nosso cardápio digital interativo e receba pelo WhatsApp!">
+    <meta property="og:image" content="images/hero-burger.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Craft & Grill - Hamburgueria Artesanal Premium">
+    <meta property="twitter:description" content="Os melhores hambúrgueres artesanais da cidade. Peça pelo nosso cardápio digital interativo e receba pelo WhatsApp!">
+    <meta property="twitter:image" content="images/hero-burger.png">
+
+    <title>Craft & Grill | Hamburgueria Artesanal Premium</title>
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-hamburger text-accent" style="color: var(--accent);"></i>
+                Craft<span>&</span>Grill
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Diferenciais</a></li>
+                <li><a href="#menu" class="nav-link">Cardápio</a></li>
+                <li><a href="#testimonials" class="nav-link">Avaliações</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn-icon cart-trigger" id="cart-btn" aria-label="Abrir carrinho">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <a href="#menu" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem; display: none;">Pedir Agora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>O melhor blend artesanal da região</span>
+                </div>
+                <h1 class="hero-title">
+                    O hambúrguer que <span>sacia a sua fome</span> e conquista sua alma.
+                </h1>
+                <p class="hero-desc">
+                    Carne 100% Angus selecionada, pão brioche selado na manteiga, queijo derretido no ponto certo e nosso molho artesanal secreto. Preparado na brasa com amor e técnica.
+                </p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">
+                        <i class="fa-solid fa-utensils"></i> Ver Cardápio
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-clock"></i> Horários
+                    </a>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="hero-feature-text">
+                            <h4>Entrega Rápida</h4>
+                            <p>Chega quente e suculento</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="hero-feature-text">
+                            <h4>Premium Angus</h4>
+                            <p>Blend de alta qualidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-bg"></div>
+                <img src="images/hero-burger.png" alt="Hambúrguer Gourmet Craft & Grill" class="hero-image" id="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFFERENTIALS -->
+    <section class="differentials" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Por que somos diferentes?</span>
+                <h2 class="section-title">Nossos Segredos Gourmet</h2>
+            </div>
+            
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                    <h3>Blend Angus Exclusivo</h3>
+                    <p>Moido diariamente na casa, nosso blend possui a proporção perfeita de carne e gordura para garantir máxima suculência na brasa.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fa-solid fa-bread-slice"></i>
+                    </div>
+                    <h3>Pão Brioche Artesanal</h3>
+                    <p>Nossos pães são assados diariamente por um padeiro parceiro. Macios, leves e selados na chapa com manteiga de garrafa.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-icon">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <h3>Molhos Autóctones</h3>
+                    <p>Molho verde da casa com ervas frescas e maionese defumada secreta. Receitas exclusivas desenvolvidas por nosso Chef.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU (CARDÁPIO) -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Cardápio Interativo</span>
+                <h2 class="section-title">Escolha Sua Fome</h2>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">Todos</button>
+                <button class="tab-btn" data-category="burgers">Hambúrgueres</button>
+                <button class="tab-btn" data-category="sides">Acompanhamentos</button>
+                <button class="tab-btn" data-category="drinks">Bebidas</button>
+                <button class="tab-btn" data-category="desserts">Sobremesas</button>
+            </div>
+            
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+                <!-- Items dynamically injected by JavaScript -->
+                <div style="grid-column: 1/-1; text-align: center; color: var(--color-muted); padding: 40px 0;">
+                    <i class="fa-solid fa-spinner fa-spin" style="font-size: 2rem; color: var(--accent); margin-bottom: 12px;"></i>
+                    <p>Carregando delícias...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Depoimentos</span>
+                <h2 class="section-title">Quem Come, Aprova</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="test-card">
+                    <div>
+                        <div class="test-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-quote">"Sem dúvidas o melhor hambúrguer da região! O ponto da carne veio perfeito, super suculento e o molho verde deles é viciante. Chegou em menos de 30 min."</p>
+                    </div>
+                    <div class="test-user">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Ana Silva" class="test-user-img">
+                        <div class="test-user-info">
+                            <h4>Ana Paula Silva</h4>
+                            <p>Cliente VIP desde 2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="test-card">
+                    <div>
+                        <div class="test-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-quote">"Fiz o pedido pelo celular e achei o carrinho super prático. O burger de bacon com cebola caramelizada é surreal. Parabéns pelo atendimento rápido no WhatsApp!"</p>
+                    </div>
+                    <div class="test-user">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Lucas Lima" class="test-user-img">
+                        <div class="test-user-info">
+                            <h4>Lucas Lima</h4>
+                            <p>Local Guide Google</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="test-card">
+                    <div>
+                        <div class="test-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="test-quote">"A opção de hambúrguer vegetariano deles é maravilhosa. O blend de grão-de-bico é muito bem temperado e o queijo coalho grelhado dá um toque espetacular!"</p>
+                    </div>
+                    <div class="test-user">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Mariana Costa" class="test-user-img">
+                        <div class="test-user-info">
+                            <h4>Mariana Costa</h4>
+                            <p>Gastróloga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT, HOURS & LOCATION -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+                    <span class="section-subtitle">Onde e Quando?</span>
+                    <h2 class="section-title">Venha nos Visitar ou Faça Seu Pedido</h2>
+                </div>
+                
+                <div class="contact-info-list">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Endereço</h3>
+                            <p>Av. Principal Gourmet, 1234 - Bairro Nobre, São Paulo - SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Horários de Funcionamento</h3>
+                            <p>Terça a Domingo: 18h00 às 23h30</p>
+                            <p>Segunda-feira: Fechado</p>
+                            <div class="status-badge" id="store-status">
+                                <i class="fa-solid fa-circle"></i> <span>Verificando status...</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Telefone & WhatsApp</h3>
+                            <p>(91) 98850-4345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-map">
+                <div class="map-wrapper">
+                    <!-- Google Maps Embed for illustrative purposes (styled dark via CSS) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975765083115!2d-46.6564943!3d-23.5613497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <i class="fa-solid fa-hamburger" style="color: var(--accent);"></i>
+                        Craft<span>&</span>Grill
+                    </a>
+                    <p>Hambúrgueres artesanais de verdade criados para proporcionar uma experiência gourmet inesquecível a cada mordida.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="btn-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="btn-icon" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/5591988504345" target="_blank" class="btn-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Diferenciais</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#testimonials">Avaliações</a></li>
+                        <li><a href="#contact">Localização</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Políticas e Infos</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Informações de Alérgicos</a></li>
+                        <li><a href="#contact">Taxas de Entrega</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Craft & Grill. Todos os direitos reservados. Feito com ❤️ para amantes de burger.</p>
+                <p>CNPJ: 12.345.678/0001-90</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PRODUCT DETAILS MODAL -->
+    <div class="modal" id="product-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close" aria-label="Fechar modal"><i class="fa-solid fa-xmark"></i></button>
+            <img src="" alt="Imagem do Produto" class="modal-header-img" id="modal-img">
+            
+            <div class="modal-body">
+                <div class="modal-title-row">
+                    <h3 class="modal-title" id="modal-title">Nome do Hambúrguer</h3>
+                    <span class="modal-price" id="modal-price">R$ 0,00</span>
+                </div>
+                <p class="modal-desc" id="modal-desc">Descrição completa com os ingredientes do hambúrguer.</p>
+                
+                <!-- Extras Section (Will only show for burgers) -->
+                <div class="option-group" id="modal-extras-section">
+                    <div class="modal-section-title">
+                        Adicionar Extras <span>Selecione até 3 itens</span>
+                    </div>
+                    
+                    <div id="modal-extras-list">
+                        <!-- Extras will be dynamically injected here -->
+                    </div>
+                </div>
+
+                <!-- Special Notes Section -->
+                <div class="option-group">
+                    <div class="modal-section-title">
+                        Observações Especiais
+                    </div>
+                    <textarea class="notes-textarea" id="modal-notes" rows="3" placeholder="Ex: Sem cebola, ponto da carne bem passado, molho à parte..."></textarea>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <div class="quantity-selector">
+                    <button class="qty-btn" id="modal-qty-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-value" id="modal-qty-val">1</span>
+                    <button class="qty-btn" id="modal-qty-plus"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <button class="btn btn-primary" id="modal-add-btn" style="flex-grow: 1; max-width: 320px;">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CART SIDEBAR DRAWER -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2><i class="fa-solid fa-shopping-basket"></i> Seu Pedido</h2>
+            <button class="cart-close" id="cart-close-btn" aria-label="Fechar carrinho"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <div class="cart-body">
+            <!-- Items Container -->
+            <div id="cart-items-container">
+                <!-- Cart items injected here -->
+            </div>
+            
+            <!-- Empty State -->
+            <div class="cart-empty" id="cart-empty-view">
+                <i class="fa-solid fa-shopping-bag"></i>
+                <p>Seu carrinho está vazio.</p>
+                <p style="font-size: 0.8rem; margin-top: 6px;">Adicione algumas delícias do cardápio!</p>
+            </div>
+            
+            <!-- Checkout Form (only shows when cart is not empty) -->
+            <div id="checkout-form-container" style="display: none;">
+                <div class="checkout-section-title">Detalhes de Entrega</div>
+                
+                <div class="delivery-toggle">
+                    <div class="delivery-option active" id="delivery-opt-delivery">Entrega</div>
+                    <div class="delivery-option" id="delivery-opt-pickup">Retirada</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="checkout-name">Nome Completo *</label>
+                    <input type="text" id="checkout-name" class="form-control" placeholder="Digite seu nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="checkout-phone">WhatsApp *</label>
+                    <input type="tel" id="checkout-phone" class="form-control" placeholder="(DD) 99999-9999">
+                </div>
+                
+                <!-- Address Section (dynamic visibility) -->
+                <div id="address-fields-wrapper">
+                    <div class="form-row">
+                        <div class="form-group" style="grid-column: span 2;">
+                            <label for="checkout-street">Rua/Avenida *</label>
+                            <input type="text" id="checkout-street" class="form-control" placeholder="Rua das Flores">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkout-number">Número *</label>
+                            <input type="text" id="checkout-number" class="form-control" placeholder="123">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-neighborhood">Bairro *</label>
+                            <input type="text" id="checkout-neighborhood" class="form-control" placeholder="Centro">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-complement">Complemento</label>
+                        <input type="text" id="checkout-complement" class="form-control" placeholder="Apto 42, Bloco B (Opcional)">
+                    </div>
+                </div>
+                
+                <div class="checkout-section-title">Forma de Pagamento</div>
+                <div class="form-group">
+                    <label for="checkout-payment">Selecione o Método *</label>
+                    <select id="checkout-payment" class="form-control">
+                        <option value="pix">PIX (Chave Pix nas notas ou QR Code)</option>
+                        <option value="credito">Cartão de Crédito (Na entrega)</option>
+                        <option value="debito">Cartão de Débito (Na entrega)</option>
+                        <option value="dinheiro">Dinheiro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="change-field-wrapper" style="display: none;">
+                    <label for="checkout-change">Precisa de troco para quanto?</label>
+                    <input type="number" id="checkout-change" class="form-control" placeholder="Ex: R$ 50,00" min="0" step="1">
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-footer" id="cart-footer-view" style="display: none;">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">R$ 0,00</span>
+            </div>
+            <div class="summary-row" id="cart-delivery-row">
+                <span>Taxa de Entrega:</span>
+                <span id="cart-delivery-fee">R$ 7,00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span class="total-price" id="cart-total">R$ 0,00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="finish-btn">
+                <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Finalizar pelo WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- JS Logic Script -->
+    <script src="script.js"></script>
+</body>
+</html>
